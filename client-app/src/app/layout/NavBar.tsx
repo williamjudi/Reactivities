@@ -8,7 +8,7 @@ export default function NavBar() {
       <Container>
         <Menu.Item exact as={NavLink} to="/" header>
           <img
-            src="/assests/Images/logo.png"
+            src="/assets/Images/logo.png"
             alt="logo"
             style={{ marginRight: '10px' }}
           />
