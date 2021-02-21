@@ -10,11 +10,11 @@ export default observer(function ActivityList() {
   return (
     <>
       {
-        activityStore.groupedActivities.map(([groupName, activites]) => (
-          <Fragment key={groupName}>
-            <Header size='huge' sub color='teal'>
-              {groupName}
-            </Header>
+        // {[key: string]: Activity[] } key is the date from activites
+        activityStore.groupedActivities.map(([group, activites]) => (
+          <Fragment key={group}>
+            <Header size='huge' sub color='teal'>{group}</Header>
+            
               {activites.map((activity) => (
                   <ActivityListItem key={activity.id} activity={activity}/>
               ))}

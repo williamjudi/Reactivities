@@ -23,9 +23,10 @@ export default class ActivityStore {
     return Object.entries(
       this.activitiesByDate.reduce((activities, activity) => {
         const date = activity.date; // key
+        // if date match, create a new array for activities with same date, else new activity array
         activities[date] = activities[date] ? [...activities[date], activity] : [activity];
         return activities;
-      }, {} as {[key: string]: Activity[] }) // starting obj
+      }, {} as {[key: string]: Activity[] }) // starting point with key & obj[]
     )
   }
 
