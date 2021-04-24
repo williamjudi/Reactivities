@@ -17,6 +17,22 @@ body {
   box-shadow: 0 2px 4px 0 rgba(34, 36, 38, .20);
 }
 
+.react-datepicker__header {
+  background-color: rgb(33, 138, 174);
+}
+.react-datepicker__time-container 
+.react-datepicker__time 
+.react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-item--selected{
+  background-color: rgb(33, 138, 174);
+}
+.react-datepicker__day--selected {
+  background-color: rgb(33, 138, 174);
+}
+
+.react-datepicker-wrapper {
+  width: 100%;
+}
+
 /*home page styles*/
 
 .masthead {
